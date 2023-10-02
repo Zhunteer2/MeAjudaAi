@@ -1,0 +1,100 @@
+body{
+    background-image: url("../imagens/Background_login.png");
+align-content: center;
+}
+
+.login-container {
+border: solid 2px #ffd230;
+background-color: #f1eeee;
+border-radius: 30px;   
+padding: 20px;
+max-height: 350px;
+height: 310px;
+max-width: 300px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+margin-top: 5%;
+}
+
+.fazer-login{
+color: #808080;
+}
+
+h1{
+margin-bottom: 35px;
+}
+
+form{
+display: flex;
+padding: 25px;
+flex-direction: column;
+}
+
+input{
+padding: 10px;
+margin-bottom: 10px;
+border-radius: 30px;
+color: #808080;
+border-style: solid 2px;
+border-color: #d3d3d3;
+}
+
+button{
+background-color: #ffd230;
+color: #fff;
+padding: 10px;
+border: none;
+border-radius: 30px;
+cursor: pointer;
+transition: background-color 0.3s;
+margin-top: 1%;
+width: 40%;
+text-decoration: solid;
+}
+
+button:hover {
+background-color: #808080;
+}
+
+#cadastrar{
+background-color: #ffd230;
+color: #fff;
+border: none;
+border-radius: 30px;
+cursor: pointer;
+transition: background-color 0.3s;
+margin-top: 10px ;
+width: 100%;
+}
+
+#cadastrar:hover{
+background-color: #808080 ;
+}
+
+h5{
+margin-top: 30px;
+}
+
+.junte-se{
+text-align: center;
+height: 50px;
+color: #808080;
+margin-top: 4%;
+font-family: 'Rowdies', cursive;
+text-transform: uppercase;
+display: flex;
+justify-content: center;
+vertical-align: auto;
+}
+
+.junte-se h1{
+margin-top: 2%;
+}
+
+h6{
+margin-top: 10%;
+font-size: 0.8REM;
+
+}
+

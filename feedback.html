@@ -1,0 +1,131 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------------------------- LINKS ------------------------->
+
+    <script src="https://kit.fontawesome.com/8c80796dd2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos/menu_nav.css">
+    <link rel="stylesheet" href="estilos/feedbacks.css">
+    <link rel="icon" href="ghost-solid.svg" type="image/png">
+    <link rel="shortcut icon" href="./imagens/faviconMeAjudaAi.ico" type="">
+    
+
+    <title>Home</title>
+</head>
+
+<body>
+  <!-----------------------navbar------------------------------>
+<nav>
+        
+  <a href="index.html" id="pagina_inicial" ><span> <img src="imagens/inicio.png" alt="Pagina Inicial" class="home"></span></a>
+
+    <div id="amarelo"></div>
+
+  <li><a href="sobre.html" id="a">Sobre nós</a></li class="nav">
+
+    <div id="amarelo"></div>
+
+  <li ><a href="como_funciona.html" id="a" >Como funciona? </a></li>
+
+    <div id="amarelo"></div>
+                          
+    <div class="dropdown"  >
+      <li><A class="dropbtn"  id="a"  >Problemas Comuns </A></li>
+        <div class="dropdown-content">
+          <a href="tutorial.html">Como Trocar a resistência de chuveiro ?</a>
+          <a href="tutorial2.html">Como Trocar uma Lâmpada?</a>
+          <a href="tutorial3.html">Como Desentupir um Ralo?</a>
+      </div>
+    </div>
+
+    <div id="amarelo"  ></div>
+
+    <div class="dropdown" id="drop">
+      <li><A class="dropbtn" id="a">Como Fazer? </A></li>
+        <div class="dropdown-content">
+          <a href="#">Como Fazer Arroz?</a>
+          <a href="#">Como Fazer Um Bolo de Caneca?</a>
+          <a href="#">Como Desentupir um Ralo?</a>
+        </div>
+    </div>
+
+    <div id="amarelo" class="drop"></div>
+      
+    <div class="dropdown" id="drop">                    
+      <li><A class="dropbtn" id="a">Algumas Dicas</A></li>
+        <div class="dropdown-content">
+          <a href="#">Como Fazer Arroz?</a>
+          <a href="#">Como Fazer Um Bolo de Caneca?</a>
+          <a href="#">Como Desentupir um Ralo?</a>
+        </div>
+    </div>
+             
+    <div id="amarelo" class="drop"></div>
+        
+  <li><a href="feedback.html" id="a">Feedback's</a></li >
+
+    <div id="amarelo"></div>
+
+  <li id="login"><a href="Login.html" >
+    <div class="user">
+
+      <img id="user-photo" src="imagens/Design sem nome.png">
+      <p id="user-email"></p></a></li>
+    </div>   
+</nav>
+<!-----------------------navbar------------------------------>
+  <div id="fixed-container">
+    <div id="feedback">
+        <div>
+            
+        </div>
+        <span><h1>Avalie-nos</h1></span>
+        <span id="star-rating">
+          <span id="star-1" class="star" onclick="setRating(1)">&#9733;</span>
+          <span id="star-2" class="star" onclick="setRating(2)">&#9733;</span>
+          <span id="star-3" class="star" onclick="setRating(3)">&#9733;</span>
+          <span id="star-4" class="star" onclick="setRating(4)">&#9733;</span>
+          <span id="star-5" class="star" onclick="setRating(5)">&#9733;</span>
+        </span>
+        <div>
+            <textarea id="comment" placeholder="Deixe um comentário"></textarea>
+        </div>
+        <div>
+          <button onclick="submitFeedback()">Enviar</button>
+        </div>
+    </div>
+
+<script>
+    let selectedRating = 0;
+
+    function setRating(rating) {
+        selectedRating = rating;
+        for (let i = 1; i <= 5; i++) {
+            const star = document.getElementById(`star-${i}`);
+            if (i <= rating) {
+                star.classList.add("star-selected"); // Adiciona a classe para alterar a cor
+            } else {
+                star.classList.remove("star-selected"); // Remove a classe para restaurar a cor padrão
+            }
+        }
+    }
+
+    function submitFeedback() {
+        const comment = document.getElementById("comment").value;
+        if (selectedRating === 0) {
+            alert("Por favor, avalie com estrelas antes de enviar seu feedback.");
+        } else {
+            alert(`Avaliação: ${selectedRating} estrelas\nComentário: ${comment}`);
+            // Você pode enviar os dados para o servidor ou fazer outras ações aqui
+        }
+       
+       
+    }
+</script>
+
+
+</body>
+</html>

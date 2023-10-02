@@ -1,0 +1,191 @@
+   /* =============== MENU DE NAVEGAÇÃO ===============*/
+*{
+margin: 0px;
+padding: 0;
+box-sizing: border-box;
+align-items: center;
+}
+#pagina_inicial{
+margin-left: 2rem;    
+margin-right: 2rem;
+}
+
+nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #808080;
+max-height: 45px;
+}
+
+li{
+display: inline-flex;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 18px;
+max-height: 45px;
+height: 45px;
+align-items: center;
+background-color: #808080;
+transition: background-color 0.25s;
+}
+
+#amarelo{
+height: 22px;
+width: 1px;
+background-color: #ffd230;
+ }
+        
+li:hover #a {
+color: #808080;
+background-color: #f1eeee;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;    
+}
+
+#a{
+display: inline-flex;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: white;
+text-decoration: none;
+font-weight: bolder;
+background-color: #808080;
+transition: background-color 0.25s;
+height: 45px;
+padding: 10px 12px 10px 12px;     
+}
+
+.home {
+display: inline-flex;
+height:38px;
+width: 110%;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropbtn {
+display: inline-flex;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 18px;
+font-weight: bolder;
+align-items: center;
+background-color: #808080;
+transition: background-color 0.25s;
+max-height: 45px;
+height: 45px;
+cursor: pointer ;
+}
+
+.dropbtn:hover{
+color: #808080;
+background-color: #f1eeee;
+
+}
+
+.dropbtn::after {
+content: "\25BC"; 
+display: flex;
+justify-content: center;
+}
+
+.dropdown-content {
+align-self: center;
+text-align: center;
+display: none;
+position: absolute;
+background-color: #808080;
+min-width: 1px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+font-size: 15px;
+font-weight: bolder;  
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px; 
+border: solid #ffd230;
+border-top: none;
+border-width: 1px;
+}
+
+.dropdown-content a {
+color: white; 
+padding: 12px 16px;
+text-decoration: none;
+display: flex; 
+}
+
+.dropdown-content a:hover {
+background-color: #f1eeee;
+border-radius: 1px ;
+color: #808080;
+}
+
+.dropdown:hover .dropdown-content {
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.ultimo-link:hover{
+border-radius: 30px;
+}
+
+#login{
+margin-right: 2%;
+}
+
+#login:hover{
+background-color: none;
+}
+
+
+.user{
+display: flex;
+margin: 0 auto;
+}
+
+#user-photo {
+margin-top: 50%;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+display: flex;
+border:  2px;
+border-color: #ffd230;
+}
+
+h1 {
+display: block;
+margin: 0 auto;
+text-align: center;
+font-weight: lighter;
+}
+
+
+
+
+@media screen and (max-width: 1180px) {
+  
+#drop{
+display: none;
+}
+
+.drop{
+display: none;
+}
+
+#user-photo {
+margin-top: 70%;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+display: flex;
+border:  2px;
+border-color: #ffd230;  
+}
+
+.user {
+display: flex;    
+}
+
+}
